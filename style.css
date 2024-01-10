@@ -252,7 +252,7 @@ body {
 
     .dropbtn {
         background: none;
-        color: black;
+        color: #270054;
         padding: 10px;
         font-size: 40px;
         font-weight: bolder;
@@ -300,8 +300,8 @@ body {
 }
 
 
+
 .baner-img img {
-    width: 90%;
     max-width: 100%;
     display: flex;
     justify-content: center;
@@ -309,5 +309,5 @@ body {
     left: 50%;
     top: 50%;
     margin: auto;
-    padding-top: 2rem;
+    margin-top: 2rem;
 }
