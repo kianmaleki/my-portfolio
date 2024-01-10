@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>test</title>
+</head>
+
+<body>
+
+    <header>
+
+    </header>
+
+    <nav class="nav">
+        <ul class="nav-ul">
+            <li class="nav-li"><a href="index.html" class="nav-a">home</a></li>
+            <li class="nav-li here"><a href="about-me.html" class="nav-a">about me</a></li>
+            <li class="nav-li"><a href="#" class="nav-a">call to me</a></li>
+            <li class="nav-li-right login"><a href="#">login</a></li>
+            <li class="nav-li-right sign"><a href="#">sign in</a></li>
+        </ul>
+    </nav>
+
+    <div class="dropdown">
+        <button onclick="toggleDropdown()" class="dropbtn">&#9776;</button>
+        <div id="myDropdown" class="dropdown-content">
+            <ul>
+
+                <li><a href="index.html">home</a></li>
+                <li><a href="about-me.html">about me</a></li>
+                <li><a href="#">login</a></li>
+                <li><a href="#">sign</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+
+
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById("myDropdown");
+            dropdown.classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+
+    <div class="about">
+        <img class="my-picture" src="IMG_6120 1.svg" alt="my-pic">
+        <div class="about-text">
+            <div class="about-title">
+                <p>Hi everyone</p>
+            </div>
+            <div class="about-p">
+                <p>My name is kian. </p>
+                <p>I have 16 yo.</p>
+                <p>Im from iran-yazd.</p>
+                <p>Im a front-end developer. </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="abilities">
+        <p class="abilities-title">
+            My abilities :
+        </p>
+        <div class="My-abilities">
+            <div class="My-abilities-items">
+                <p>html</p>
+                <div class="container">
+                    <div class="skills html">90%</div>
+                </div>
+            </div>
+            <div class="My-abilities-items">
+                <p>css</p>
+                <div class="container">
+                    <div class="skills css">86%</div>
+                </div>
+            </div>
+            <div class="My-abilities-items">
+                <p>javascript</p>
+                <div class="container">
+                    <div class="skills js"> 5%</div>
+                </div>
+            </div>
+            <div class="My-abilities-items">
+                <p>bootstrap</p>
+                <div class="container">
+                    <div class="skills bootstrap">73%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
