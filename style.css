@@ -221,6 +221,26 @@ body {
 
 
 
+.min-baner-img {
+    visibility: hidden;
+}
+
+.baner-img img {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    left: 50%;
+    top: 50%;
+    margin: auto;
+}
+
+.max-baner-img {
+    visibility: visible;
+}
+
+
+
 .mini-nav {
     display: none;
 }
@@ -297,17 +317,13 @@ body {
         display: block;
     }
 
-}
+    .min-baner-img {
+        visibility: visible;
+    }
+
+    .max-baner-img {
+        visibility: hidden;
+    }
 
 
-
-.baner-img img {
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    left: 50%;
-    top: 50%;
-    margin: auto;
-    margin-top: 2rem;
 }
