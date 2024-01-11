@@ -222,7 +222,7 @@ body {
 
 
 .min-baner-img {
-    visibility: hidden;
+    display: none;
 }
 
 .baner-img img {
@@ -236,7 +236,7 @@ body {
 }
 
 .max-baner-img {
-    visibility: visible;
+    display: block;
 }
 
 
@@ -318,11 +318,11 @@ body {
     }
 
     .min-baner-img {
-        visibility: visible;
+        display: block;
     }
 
     .max-baner-img {
-        visibility: hidden;
+        display: none;
     }
 
 
